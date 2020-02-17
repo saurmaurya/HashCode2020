@@ -44,3 +44,12 @@ The solution gets 1 point for each slice of pizza ordered.
 <table><tr><td>For **example**, above we ordered 3 pizzas: **S<sub>0</sub>**, **S<sub>2</sub>** and **S<sub>3</sub>**. We know that the pizza slices in each of these are 2, 6, and 8 respectively.</br>So the score is: 2+6+8 = **16 points**</td></tr></table>
 
 **Note that there are multiple data sets representing separate instances of the problem. The final score for your team will be the sum of your best scores for the individual datasets.**
+
+<hr>
+
+# Steps for getting the output
+* Place all the input files in a subfolder named **input** where the hashCode2020.py exist
+* Run the **hashCode2020.py** program within same directory with terminal or command prompt. </br>Example: ```python hashCode2020.py```
+* Enter the input file name without **'.in'** extension
+* The output file will be generated with the file name with **'.out'** extension in the output subfolder.
+* Use any text editor for viewing the output.
