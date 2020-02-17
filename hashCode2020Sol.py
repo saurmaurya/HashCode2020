@@ -10,6 +10,7 @@
 # Importing the libraries
 import os
 
+
 class HashCode2020:
     '''
     This is a class for getting solution of HashCode2020 practice problem.
@@ -27,12 +28,13 @@ class HashCode2020:
 
         Parameters:
             This function gets no parameter.
-        
+
         Returns:
             Input (list): This function return a list of input of type int.
         '''
         Input = []
-        self.fileName = input("Enter the input filename: ")
+        self.fileName = input(
+            "Enter the input filename without '.in' extension:\nIf located in another directory, specify file name with path of file: ") + '.in'
         if not os.path.exists(self.fileName):
             print('The input file didn\'t exist,',
                   'please re-enter the input filename')
@@ -97,10 +99,10 @@ class HashCode2020:
     def fileOutput(self, Output):
         '''
         The function to generate the output in a file
-        
+
         Parameters:
             Output: A list of the output of str type, to append in the file 
-        
+
         Returns:
             Create a file of Output in the output directory
         '''
@@ -131,7 +133,6 @@ if __name__ == "__main__":
     # Creating the output directory if not exist
     if not os.path.exists('output'):
         os.mkdir('output')
-    
+
     # Saving the output in a file to the output directory
     obj.fileOutput(output)
-
